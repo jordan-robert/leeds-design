@@ -1,4 +1,3 @@
-<script>
  browser = {};
 if (/(Edge\/[0-9]{2})/i.test(navigator.userAgent)) {
     browser.agent = navigator.userAgent.match(/(Edge\/[0-9]{2})/i)[0].split("/")[0];
@@ -65,4 +64,4 @@ if (browser.agent === "MSIE" && browser.version <= 12) {
     newDiv.setAttribute("style", "background-color:cyan;padding:12px;");
     document.body.insertBefore(newDiv, document.body.firstChild);
 }
-</script>
+
