@@ -1,37 +1,208 @@
-## Welcome to GitHub Pages
+<style>
+* {
+    box-sizing: border-box;
+}
 
-You can use the [editor on GitHub](https://github.com/jordan-robert/leeds-design/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+html, body{
+    margin: 0;
+    padding: 0;
+}
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
 
-### Markdown
+.container{
+    height: 100vh;
+    background: url('https://res.cloudinary.com/dfkn1kzs0/image/upload/v1588506071/bg-desktop_rfy0wb.svg');
+    background-color: #674BAF;
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    text-align:center;
+    padding:0 20px;
+}
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+nav{
+    text-align: left;
+    margin:45px 0; 
+    margin-left: 5%;
+}
 
-```markdown
-Syntax highlighted code block
+.main-section{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+}
+.main-section > div:last-child{
+    width: 40%;
+    color: white;
+}
 
-# Header 1
-## Header 2
-### Header 3
+.main-section > div:last-child p{
+    font-size: 18px;
+}
 
-- Bulleted
-- List
+.header{
+    font-weight: bold;
+    font-size: 45px;
+}
 
-1. Numbered
-2. List
+button{
+    font-size: 20px;
+    padding: 13px;
+    background-color: white;
+    width: 250px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: #674BAF;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 8px 17px -8px black;
+    cursor: pointer;
+    border: 3px solid white;
+}
 
-**Bold** and _Italic_ and `Code` text
+button:hover {
+    color: white;
+    background: rgba(103,75,175,0.9);
+}
 
-[Link](url) and ![Image](src)
-```
+.footer{
+    font-size: 40px;
+    margin: 10px 70px;
+    text-align: end;
+}
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+.footer i{
+    color: white;
+    margin: 0 10px;
+    cursor: pointer;
+}
 
-### Jekyll Themes
+.footer i:hover{
+  transform: translateY(-5px);
+}
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jordan-robert/leeds-design/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+@media screen and (min-width: 767px) and (max-width: 1350px) {
+    body{
+        overflow: auto;
+    }
+    .container{
+        height: 100vh;
+        background: url('https://res.cloudinary.com/dfkn1kzs0/image/upload/v1588506071/bg-mobile_sb936e.svg');
+        background-color: #674BAF;
+        background-size:cover;
+        background-position:center;
+    }
+    .main-section{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .main-section > div:last-child {
+        width: 80%;
+    }
+    .main-section > div:last-child p {
+        font-size: 15px;
+    }
+    .main-section img{
+        width: 80%;
+    }
+    .header{
+        font-size: 20px;
+    }
+    nav {
+        margin: 10% 0;
+        margin-left: 30px;
+    }
+    nav img{
+        width: 40%;
+    }
+    button{
+        font-size: 15px;
+        padding: 6px;
+        width: 200px;
+    }
+    .footer{
+        margin: 10% 0;
+        text-align: center;
+        font-size: 28px;
+    }
+}
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+@media screen and (max-width: 766px) {
+    body{
+        overflow: auto;
+    }
+    .container{
+        height: 100%;
+        background: url('https://res.cloudinary.com/dfkn1kzs0/image/upload/v1588506071/bg-mobile_sb936e.svg');
+        background-color: #674BAF;
+        background-size:cover;
+        background-position:center;
+    }
+    .main-section{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .main-section > div:last-child {
+        width: 80%;
+    }
+    .main-section > div:last-child p {
+        font-size: 15px;
+    }
+    .main-section img{
+        width: 80%;
+    }
+    .header{
+        font-size: 20px;
+    }
+    nav {
+        margin: 10% 0;
+        margin-left: 30px;
+    }
+    nav img{
+        width: 40%;
+    }
+    button{
+        font-size: 15px;
+        padding: 6px;
+        width: 200px;
+    }
+    .footer{
+        margin: 20% 0;
+        text-align: center;
+        font-size: 28px;
+    }
+}
+</style>
+<div class="container">
+    <title> Leeds Lab </title>
+    <nav>
+      <img src="https://res.cloudinary.com/dfkn1kzs0/image/upload/v1588506072/logo_cktxl9.svg" alt="logo" />
+    </nav>
+    <div class="main-section">
+      <div>
+        <img src="https://res.cloudinary.com/dfkn1kzs0/image/upload/v1588506071/illustration-mockups_qrukpf.svg" alt="mockups" />
+      </div>
+      <div>
+        <div class="header">Leeds Lab</div>
+        <p> Please open the start Splash Page</p>
+        <button>Splash Page</button>
+      </div>
+    </div>
+    <div class="footer">
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+    </div>
+  </div>
