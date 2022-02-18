@@ -1,3 +1,2 @@
 Leeds Design 
-
-<button> Zeus </button>
+<a href="https://ap-auth.leedslab.uk/#/login">Splash Page</a>
